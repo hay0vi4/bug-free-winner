@@ -1,0 +1,11 @@
+{
+  "build": {
+    "builder": "paketo",
+    "buildpacks": [
+      {
+        "uri": "docker://paketo-buildpacks/python"
+      }
+    ]
+  },
+  "start": "gunicorn app:app"
+}
